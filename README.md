@@ -124,5 +124,11 @@ Testing the webserver.
   
 # OUTPUT:
 ![alt text](<Screenshot 2024-11-25 140407.png>)
+
+![WhatsApp Image 2024-12-12 at 19 27 21_091f7b51](https://github.com/user-attachments/assets/c91529dc-bf01-4b64-8894-d208af5901a4)
+
+![WhatsApp Image 2024-12-12 at 19 27 14_b740aa31](https://github.com/user-attachments/assets/349fe9af-db0c-408f-8380-e6bce67383be)
+
+
 # RESULT:
 The program for implementing simple webserver is executed successfully.
