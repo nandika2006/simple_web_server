@@ -120,12 +120,22 @@ Testing the webserver.
         .spec-detail {
           color: #555;
         }
+
+                class MyHandler(BaseHTTPRequestHandler):
+        def do_GET(self):
+        print("Request received")
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+        server_address = ('', 8000)
+        httpd = HTTPServer(server_address, MyHandler)
+        print("My webserver is running...")
+        httpd.serve_forever()
       
   
 # OUTPUT:
 ![alt text](<Screenshot 2024-11-25 140407.png>)
-
-![WhatsApp Image 2024-12-12 at 19 27 21_091f7b51](https://github.com/user-attachments/assets/c91529dc-bf01-4b64-8894-d208af5901a4)
 
 ![WhatsApp Image 2024-12-12 at 19 27 14_b740aa31](https://github.com/user-attachments/assets/349fe9af-db0c-408f-8380-e6bce67383be)
 
